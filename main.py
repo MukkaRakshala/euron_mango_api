@@ -12,6 +12,7 @@ MONGO_URI = os.getenv("MONGO_URI")
 client = AsyncIOMotorClient(MONGO_URI)
 # this creates an instance of the MongoDB client using the connection URI, allowing the application to interact with the MongoDB database.
 db = client["euron"]
+# this selects the "euron" database from the MongoDB client, which is where the application will store and retrieve data.
 euron_data = db["euron_coll"]
 
 app = FastAPI()
