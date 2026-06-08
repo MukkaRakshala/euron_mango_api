@@ -3,4 +3,4 @@ uvicorn
 motor
 python-dotenv
 pymango[srv]
-uvicorn
+pydantic
